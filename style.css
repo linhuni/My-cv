@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #ff7613;
+    --text-color: #727171;
+}
+html {
+    font-size: 10px;
+}
+body{
+    font-family: Inter, sans-serif;
+    background-color: black;
+    color: white;
+}
+img{
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.profile_summary {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+/*layouts*/
+.container{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5rem;
+    background: #070707;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+@media only scree and (max-width: 768px){
+    .container{
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
+    .profile{
+        grid-column: 1 / -1;
+        margin-bottom: 2rem;
+    }
+}
+
+/*profile*/
+.profile_container{
+    display: flex;
+    gap: 2rem;
+}
+.profile_profileImg{
+    max-width: 250px;
+}
+.profile_name{
+    white-space: nowrap;
+    color: white;
+    font-size: 200;
+    font-size: clamp(2rem, 8vw, 4rem);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: -0.8rem;
+}
+.profile_job{
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.Download{
+    display: block;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+.Download:hover{
+    color: var(--primary-color);
+}
+@media only screen and (max-width: 768px) {
+    .profile_container{
+        flex-direction: column;
+    }
+}
