@@ -24,7 +24,7 @@ a {
     text-decoration: none;
     color: white;
 }
-.profile_summary {
+.description{
     margin-top: 1rem;
     font-size: 1.5rem;
     font-weight: 400;
@@ -48,6 +48,11 @@ a {
     font-weight: 500;
     margin: 0.8rem 0;
 }
+.item_subtitle{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 400;
+}
 /*layouts*/
 .container{
     max-width: 1000px;
@@ -70,6 +75,7 @@ a {
         grid-column: 1 / -1;
         margin-bottom: 2rem;
     }
+
     .group1{
         display: flex;
         gap: 5rem;
