@@ -150,3 +150,13 @@ a {
     font-weight: 500;
     margin: 0.8rem 0;
 }
+/*socials*/
+.social_items{
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--text-color);
+}
