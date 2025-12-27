@@ -102,12 +102,10 @@ a {
     display: flex;
     gap: 2rem;
 }
-.profile_profileImg{
-    max-width: 250px;
-}
+
 .profile_name{
     white-space: nowrap;
-    color: white;
+    color: var(--primary-color);
     font-size: 200;
     font-size: clamp(2rem, 8vw, 4rem);
     text-transform: uppercase;
@@ -117,8 +115,9 @@ a {
 
 .profile_title{
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 700;
     text-transform: uppercase;
+    margin: 2rem 0
 }
 .Download{
     display: block;
