@@ -77,12 +77,25 @@ a {
     margin-bottom: 2rem;
 }
 
-.group1{
+.group1, .group2{
     display: flex;
     gap: 5rem;
     flex-direction: column;
+
 }
 
+.group3{
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: row;
+    grid-column: 1/-1;
+    display: flex;
+    gap: 5rem;
+}
+.group3 > div{
+    flex: 1;
+}
 
 /*profile*/
 .profile_container{
@@ -152,11 +165,34 @@ a {
 }
 /*socials*/
 .social_items{
+    margin-top: 2rem;
+}
+.social_item{
     margin-top: 1.5rem;
     font-size: 1.5rem;
     display: flex;
-    gap: 1.5rem;
+    gap: .5rem;
     align-items: center;
     justify-content: flex-start;
     color: var(--text-color);
 }
+.social_item:hover{
+    color: var(--primary-color);
+}
+.social_item svg{
+    width: 2rem;
+}
+hr {
+    grid-column: 1/-1;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    border-top: 2px solid rgba(128,128,128,0.229);
+    
+}
+@media only screen and (max-width: 768px){
+    hr {
+        margin: 0 auto;
+    }
+} 
