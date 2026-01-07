@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+
+<body>
+  <div class="container">
+    <!-- FULL WIDTH PROFILE -->
+    <header class="profile">
+      <div class="profile_container">
+        <div class="profile_content">
+          <h1 class="profile_name">Tang Khanh Linh</h1>
+          <p class="profile_title">Cloud Engineer</p>
+
+          <p class="description">
+            Final-year Information Technology student with a strong interest in DevOps and cloud architecture.
+            Passionate about learning modern cloud technologies and building scalable, reliable systems.
+            Highly motivated, adaptable, and eager to continuously improve technical skills while contributing
+            effectively in a professional environment.
+          </p>
+
+          <a class="Download" href="./cv.pdf" download="CV.pdf">Download</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- LEFT COLUMN -->
+    <aside class="left">
+      <section class="skills">
+        <h3 class="title">Expertise</h3>
+        <ul class="skill_list description">
+          <li>Java and JavaScript</li>
+          <li>Node.js</li>
+          <li>Cloud Technology</li>
+          <li>Team communication</li>
+        </ul>
+      </section>
+
+      <section class="education">
+        <h3 class="title">Education</h3>
+        <div class="school_item">
+          <p class="item_preTitle">2022–2026</p>
+          <h4 class="item_title">RMIT University</h4>
+          <p class="item_subtitle">Information Technology</p>
+        </div>
+      </section>
+    </aside>
+
+    <!-- RIGHT COLUMN -->
+    <main class="right">
+      <section class="experience">
+        <h3 class="title">Experience</h3>
+
+        <div class="experience_item">
+          <p class="item_preTitle">Feb 2025 – May 2025</p>
+          <h4 class="item_title">Cloud Engineer Intern – CONG TY TNHH AWS</h4>
+          <ul class="description">
+            <li>Supported the design and deployment of scalable cloud infrastructure for internal and client-facing projects</li>
+            <li>Contributed to projects involving security, backup, and disaster recovery</li>
+            <li>Automated infrastructure with Terraform and Ansible, reducing manual provisioning</li>
+            <li>Participated in configuring, managing, and monitoring cloud infrastructure</li>
+          </ul>
+        </div>
+
+        <div class="experience_item">
+          <p class="item_preTitle">Dec 25 – Jan 2, 2026</p>
+          <h4 class="item_title">Cloud Resume (AWS) — Personal Project</h4>
+          <ul class="description">
+            <li>Designed and deployed a serverless resume website using Amazon S3 and CloudFront</li>
+            <li>Implemented AWS CloudFormation to provision and manage resources consistently</li>
+            <li>Built a visitor counter backend using Lambda, API Gateway, and DynamoDB</li>
+            <li>Automated deployment via GitHub Actions CI/CD</li>
+            <li>Applied IAM least-privilege access and cloud security practices</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="language">
+        <h3 class="title">Language</h3>
+        <ul class="description">
+          <li>English (PTE 66)</li>
+          <li>Vietnamese</li>
+        </ul>
+      </section>
+    </main>
+
+    <hr />
+
+    <!-- FULL WIDTH FOOTER -->
+    <footer class="group3">
+      <section class="contact">
+        <h3 class="title">Contact</h3>
+        <div class="contact_infor">
+          <p class="description">Ho Chi Minh City, Vietnam</p>
+          <p class="description">+84 906 638 978</p>
+          <p class="description">tanglinh417@gmail.com</p>
+        </div>
+      </section>
+
+      <section class="socials">
+        <h3 class="title">Socials</h3>
+        <div class="social_items">
+          <a href="https://github.com/linhuni" class="social_item">
+            <i class="fa-brands fa-github"></i>
+            <span>Github</span>
+          </a>
+          <p class="social_item">This site has been visited <span id="visits"></span> times</p>
+        </div>
+      </section>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
