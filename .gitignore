@@ -1,0 +1,17 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# Lambda build artifacts
+*.zip
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+
+# Secrets
+.env
